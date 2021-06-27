@@ -1,4 +1,4 @@
-# Sticky-Notes-App
+# Sticky Notes App
 
 -------------
 -------------
