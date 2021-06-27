@@ -1,0 +1,118 @@
+/* tasarım tarayıcıda 67% ölceklendirmeye gore yapılmıstır  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #c68c53a8;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 24px;
+}
+
+.createNoteEmp {
+    position: absolute;
+    top: -80px;
+    left: 30px;
+}
+
+.createNoteEmp button {
+    font-size: 19px;
+    padding: 0.8rem 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: rgb(15, 133, 201);
+    border: none;
+    transition: 450ms ease;
+}
+
+.createNoteEmp button:hover {
+    background-color: rgb(16, 123, 185);
+}
+
+.typeNoteEmp {
+    width: 320px;
+    height: 400px;
+    position: fixed;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.none {
+    display: none;
+}
+
+.typeNoteEmp textarea {
+    border: none;
+    width: 320px;
+    height: 400px;
+    letter-spacing: 2px;
+    resize: none;
+    padding: 4.6rem 1.2rem 1rem 2rem;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.65);
+}
+
+.typeNoteEmp i {
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    color: gray;
+    transition: 250ms ease;
+    cursor: pointer;
+}
+
+.closeIcon {
+    right: 25px;
+}
+
+.closeIcon:hover {
+    color: rgb(206, 8, 8);
+}
+
+.checkIcon {
+    right: 75px;
+}
+
+.checkIcon:hover {
+    color: rgb(22, 170, 22);
+}
+
+.Employee {
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+    padding: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Employee .Note {
+    width: 320px;
+    padding: 2rem 1.2rem 1rem 2rem;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.65);
+    height: 380px;
+    position: relative;
+    display: flex;
+    transition: 250ms ease;
+}
+
+.Employee .Note pre {
+    width: 97%;
+    letter-spacing: 3px;
+    position: relative;
+    height: 350px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 28px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+}
